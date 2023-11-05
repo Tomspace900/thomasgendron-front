@@ -15,7 +15,7 @@ export default function Langue() {
 		}
 	}
 	return (
-		<div className='absolute top-5 lg:right-32 right-10 z-10'>
+		<div className='fixed top-5 lg:right-32 right-10 z-10'>
 			<div className='flex px-2 space-x-4 lg:space-x-8 text-xl'>
 				<p
 					className='cursor-pointer hover:scale-110 transition-all duration-300'
