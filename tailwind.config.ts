@@ -25,7 +25,10 @@ const config: Config = {
 				main: ['Sono', 'monospace'],
 				cursive: ['Kaushan Script', 'cursive'],
 			},
-			spacing: {},
+			boxShadow: {
+				card: '0px 0px 35px rgba(0, 0, 0, 0.15)',
+				bubble: '0px 4px 35px rgba(0, 0, 0, 0.25)',
+			},
 		},
 	},
 	plugins: [],

@@ -13,7 +13,7 @@ export default function Accueil() {
 	}
 
 	return (
-		<div className='min-h-screen h-full w-full px-12 relative flex flex-col lg:flex-row'>
+		<div className='min-h-screen h-full w-full sm:px-12 px-8 relative flex flex-col lg:flex-row overflow-x-clip'>
 			<div className='absolute -top-28 -left-36 lg:-top-10 lg:-left-12 -z-10 w-[500px] h-[500px] bg-turquoise bg-opacity-30 rounded-full blur-3xl' />
 			<div className='md:mt-36 mt-24 md:ml-24 ml-0 flex flex-col items-start space-y-10'>
 				<h1 className='font-extralight sm:text-8xl text-6xl lg:ml-20 ml:44'>
@@ -28,16 +28,22 @@ export default function Accueil() {
 						: "Hello my name is Thomas I'm trying to find the time to finish this website !"}
 				</p>
 			</div>
-			<div className='flex items-end w-full justify-end'>
-				<Image src={profilePic} width={500} height={500} priority alt='profile picture' className='lg:w-full' />
+			<div className='flex items-end w-full lg:justify-end justify-center'>
+				<Image
+					src={profilePic}
+					width={1324}
+					height={1572}
+					priority
+					alt='profile picture'
+					className='lg:w-full w-[90%] lg:pt-0 pt-8'
+				/>
 			</div>
-
 			<Image
 				src={arrow}
 				width={50}
 				height={50}
 				alt='arrow'
-				className='absolute bottom-10 lg:left-56 left-10 z-10 cursor-pointer hover:scale-110 transition-all duration-300'
+				className='absolute sm:bottom-10 bottom-6 lg:left-56 left-10 z-10 h-20 sm:h-36 cursor-pointer hover:scale-110 transition-all duration-300'
 				onClick={scrollDown}
 			/>
 		</div>

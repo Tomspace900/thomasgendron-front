@@ -1,6 +1,8 @@
+import LanguageProvider from './LangContext';
 import Langue from '@/components/langue';
 import Accueil from '@/sections/accueil';
-import LanguageProvider from './LangContext';
+import Parcours from '@/sections/parcours';
+import Projets from '@/sections/projets';
 
 export default function HomePage() {
 	return (
@@ -11,8 +13,9 @@ export default function HomePage() {
 
 				<Accueil />
 
-				<div className='bg-red-400 h-screen w-screen'></div>
-				<div className='bg-green-300 h-screen w-screen'></div>
+				<Parcours />
+
+				<Projets />
 			</div>
 		</LanguageProvider>
 	);
